@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Work Sans", sans-serif;
+}
+
+.section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 68px 20px 0 20px;
+  box-sizing: border-box;
+  background-image: url(../../background.png);
+  background-size: contain;
+}
+.title {
+  text-align: center;
+  font-size: 26px;
+}
+.form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 0;
+}
+.input {
+  border-radius: 20px;
+  padding: 10px;
+  width: 280px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  font-family: "Work Sans", sans-serif;
+  border: 1px solid #000;
+}
+.input:active, .input:focus{
+  outline: none;
+}
+.submit {
+  border-radius: 20px;
+  padding: 10px;
+  width: 200px;
+  font-family: "Work Sans", sans-serif;
+  background-image: linear-gradient(to bottom right, #ef476f, #5c164e);
+  color: white;
+  font-weight: 500;
+  border: none;
+  margin: 10px 0 10px 0;
+  font-size: 18px;
+}
+.submit:hover{
+  box-shadow: 5px 5px 10px #000;
+  cursor: pointer;
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .input {
+    width: 390px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .title{
+      font-size: 30px;
+  }
+  .input {
+      font-size: 20px;
+    width: 600px;
+    margin-bottom: 20px;
+  }
+  .submit {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1025px) {
+    .title{
+        font-size: 34px;
+    }
+    .input {
+        font-size: 24px;
+      width: 800px;
+      margin-bottom: 20px;
+    }
+    .submit {
+      font-size: 24px;
+    }  
+}
